@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Ledger — GTA VI Trophy Guide &amp; Tracker</title>
+<meta name="description" content="An offline guide and tracker for all 55 PlayStation 5 trophies of Grand Theft Auto VI: the official list, a platinum roadmap, missable flags, and a cited guide for every trophy.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <div>
+      <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies</p>
+      <h1>Leonida Ledger</h1>
+      <p class="subtitle">The offline trophy guide &amp; tracker for GTA VI — every trophy, its guide and its sources, a road to the platinum, and a checklist that remembers.</p>
+    </div>
+    <div class="platinum-card" id="platinum-card" aria-label="Platinum progress">
+      <p class="platinum-label">Platinum</p>
+      <p class="platinum-name">Vice Got a Price!</p>
+      <p class="platinum-facts">Difficulty 4/10 &middot; about 200 hours &middot; 1 playthrough &middot; 0 online trophies</p>
+      <div class="progress-track"><div class="progress-fill" id="progress-fill" style="width: 0%"></div></div>
+      <p class="progress-text" id="progress-text">0 of 55 earned — 0%</p>
+      <p class="progress-breakdown" id="progress-breakdown">Platinum 0/1 &middot; Gold 0/2 &middot; Silver 0/6 &middot; Bronze 0/46</p>
+    </div>
+  </div>
+</header>
+
+<nav class="tabs" id="tabs" aria-label="Guide sections">
+  <button class="tab active" data-tab="checklist" type="button">Checklist</button>
+  <button class="tab" data-tab="roadmap" type="button">Roadmap to Platinum</button>
+  <button class="tab" data-tab="missables" type="button">Missables</button>
+  <button class="tab" data-tab="notes" type="button">Notes &amp; Sources</button>
+</nav>
+
+<section class="toolbar" id="toolbar" aria-label="Tracker controls">
+  <label class="search-box">Search
+    <input type="search" id="search" placeholder="Search a trophy, mission or place…" autocomplete="off">
+  </label>
+  <div class="kind-filters" id="kind-filters" role="group" aria-label="Filter by kind">
+    <button class="chip active" data-kind="all" type="button">All 55</button>
+    <button class="chip" data-kind="story" type="button">Story</button>
+    <button class="chip" data-kind="missable" type="button">Missable</button>
+    <button class="chip" data-kind="collectibles" type="button">Collectibles</button>
+    <button class="chip" data-kind="activities" type="button">Activities</button>
+    <button class="chip" data-kind="online" type="button">Online</button>
+  </div>
+  <label class="toggle"><input type="checkbox" id="spoiler-toggle"> Hide story spoilers</label>
+  <label class="toggle"><input type="checkbox" id="earned-only"> Earned only</label>
+  <div class="save-actions">
+    <button id="export-btn" type="button">Export progress</button>
+    <button id="import-btn" type="button">Import progress</button>
+    <button id="reset-btn" type="button">Reset</button>
+  </div>
+  <input type="file" id="import-file" accept="application/json,.json" hidden>
+  <p class="save-note" id="save-note">Progress saves in this browser automatically.</p>
+</section>
+
+<main>
+  <section class="view" id="view-checklist">
+    <div class="checklist-layout">
+      <div class="trophy-list" id="trophy-list" role="list" aria-label="Trophy checklist"></div>
+      <aside class="detail" id="detail" aria-label="Selected trophy guide"></aside>
+    </div>
+  </section>
+
+  <section class="view" id="view-roadmap" hidden>
+    <div class="roadmap" id="roadmap"></div>
+  </section>
+
+  <section class="view" id="view-missables" hidden>
+    <div class="missables" id="missables"></div>
+  </section>
+
+  <section class="view" id="view-notes" hidden>
+    <div class="notes" id="notes"></div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>Leonida Ledger is an unofficial fan guide. Grand Theft Auto, GTA and Rockstar Games are trademarks of their owners; this guide uses no Rockstar logo, artwork or game screenshots. Trophy names, descriptions and grades are shown as PlayStation publishes them. Guides are written in our own words for this page, with each guide's sources named beside it. Works offline: every file it loads lives in this folder, and nothing is fetched from the network.</p>
+</footer>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
