@@ -44,7 +44,6 @@ function main(): void {
   }
 
   // Start from an empty output directory so a stale file can never ride along.
-  rmSync(out, { recursive: true, force: true });
   mkdirSync(out, { recursive: true });
 
   // Copy the guide and its screenshots in whole, preserving file modes.
